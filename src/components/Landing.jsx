@@ -4,7 +4,7 @@ import heroImage from "../assets/hero-image.png";
 function Landing() {
   return (
     <div className="h-screen flex items-center justify-center font-inter relative pt-14">
-      <div className="w-4/5 flex h-4/5 items-center md:flex-row flex-col-reverse">
+      <div className="w-4/5 flex h-4/5 items-center md:flex-row flex-col">
         <div>
           <h2 className="text-[3rem] leading-[4rem] font-[200]">
             Great{" "}
@@ -17,7 +17,7 @@ function Landing() {
               teams
             </span>
           </h2>
-          <p className="text-[#4A5568] mt-8 leading-[2rem] text-xl">
+          <p className="text-textGray mt-8 leading-[2rem] text-xl">
             We help build and manage a team of world class developers <br /> to
             bring your vision to life
           </p>

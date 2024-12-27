@@ -8,6 +8,11 @@ export default {
     extend: {
       fontFamily: {
         inter: ["Inter Variable", "sans-serif"]
+      },
+      colors: {
+        coralPink: '#F76680',
+        darkPurple: '#57007B',
+        textGray: "#4A5568"
       }
     },
   },

@@ -1,7 +1,7 @@
 import narulaLogo from "../assets/narula-nextgen.png";
 import xIcon from "../assets/x.svg";
 import menuIcon from "../assets/menu.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +16,7 @@ function Navigation() {
         </span>
       )}
       <header
-        className={`md:w-full md:h-16 w-screen h-screen flex-col md:flex-row justify-between items-center md:px-8 md:shadow-2xl fixed bg-white z-10 top-0 ${
+        className={`md:w-full md:h-16 w-screen h-screen flex-col md:flex-row justify-between items-center md:px-8 md:shadow-2xl bg-white z-10 absolute top-0 ${
           isMenuOpen ? "flex" : "hidden"
         } md:flex`}
       >
