@@ -12,6 +12,7 @@ export default {
       colors: {
         coralPink: '#F76680',
         darkPurple: '#57007B',
+        magentaPink: "#A7337D",
         textGray: "#4A5568"
       }
     },

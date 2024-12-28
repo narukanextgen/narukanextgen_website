@@ -1,4 +1,13 @@
 import workGroupImage from "../assets/work-group-image.png";
+import logo1 from "../assets/logos/logo1.png";
+import logo2 from "../assets/logos/logo2.png";
+import logo3 from "../assets/logos/logo3.png";
+import logo4 from "../assets/logos/logo4.png";
+import logo5 from "../assets/logos/logo5.png";
+import logo6 from "../assets/logos/logo6.png";
+import logo7 from "../assets/logos/logo7.png";
+import LeftArrowIcon from "../assets/left-arrow.svg?react";
+import RightArrowIcon from "../assets/right-arrow.svg?react";
 
 function Testimonials() {
   return (
@@ -22,8 +31,9 @@ function Testimonials() {
               are a custom software development <br /> company that guarantees
               the successful delivery of your <br /> project
             </p>
-            <span className="mb-10 text-lg text-darkPurple">
+            <span className="mb-10 text-sm md:text-lg text-darkPurple flex items-center gap-2">
               See more Information
+              <RightArrowIcon />
             </span>
           </div>
           <div className="h-full">
@@ -41,6 +51,24 @@ function Testimonials() {
             <span className="font-bold">We are Working With</span>
           </h3>
         </span>
+        <span className="flex justify-end pr-20 gap-5">
+          <button className="w-10 h-10 border-2 border-darkPurple rounded-full flex justify-center items-center">
+            <LeftArrowIcon className="fill-darkPurple" />
+          </button>
+          <button className="w-10 h-10 border-2 border-darkPurple bg-darkPurple rounded-full flex justify-center items-center">
+            <RightArrowIcon className="text-white" />
+          </button>
+        </span>
+        <span className="block w-20 h-10 rounded-t-full bg-gradient-to-tr from-darkPurple to-coralPink ml-[50%]"></span>
+        <div className="w-full grid grid-cols-2 lg:flex items-center justify-items-center lg:justify-between px-5 py-3 bg-gray-200 mb-24">
+          <img src={logo1} alt="logo1" />
+          <img src={logo2} alt="logo1" />
+          <img src={logo3} alt="logo1" />
+          <img src={logo4} alt="logo1" />
+          <img src={logo5} alt="logo1" />
+          <img src={logo6} alt="logo1" />
+          <img src={logo7} alt="logo1" />
+        </div>
       </div>
     </>
   );
