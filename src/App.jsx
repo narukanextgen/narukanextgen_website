@@ -11,6 +11,7 @@ import TechStack from "./components/TechStack";
 import Roadmap from "./components/Roadmap";
 import Resources from "./components/Resources";
 import Hiring from "./components/Hiring";
+import TestimonialCarousel from "./components/TestimonialCarousel";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Landing />
         <ServicesCarousel />
         <Testimonials />
+        <TestimonialCarousel />
         <CaseStudies />
         <Endorsement />
         <Approach />

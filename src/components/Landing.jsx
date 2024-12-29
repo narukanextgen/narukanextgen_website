@@ -4,7 +4,7 @@ import heroImage from "../assets/hero-image.png";
 function Landing() {
   return (
     <div className="h-screen flex items-center justify-center font-inter relative pt-14">
-      <div className="w-4/5 flex h-4/5 items-center md:flex-row flex-col">
+      <div className="w-4/5 flex h-4/5 items-center lg:flex-row flex-col">
         <div>
           <h2 className="text-[3rem] leading-[4rem] font-[200]">
             Great{" "}

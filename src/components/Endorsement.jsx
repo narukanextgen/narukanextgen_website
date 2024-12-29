@@ -15,7 +15,7 @@ function Endorsement() {
         <span className="font-bold"> Great Software</span>
       </h3>
 
-      <div className="w-full lg:h-[30rem] flex flex-col md:flex-row-reverse justify-between rounded-2xl mb-10 lg:mb-28">
+      <div className="w-full lg:h-[30rem] flex flex-col lg:flex-row-reverse justify-between rounded-2xl mb-10 lg:mb-28">
         <img
           src={endorsement1}
           alt="Endorsement 1"
@@ -38,7 +38,7 @@ function Endorsement() {
             you cut costs and deliver within budget.
           </p>
 
-          <span className="flex gap-2 md:gap-5 h-20 md:h-20 items-center">
+          <span className="flex gap-2 lg:gap-5 h-20 lg:h-20 items-center">
             <hr className="h-full w-1 shrink-0 bg-gradient-to-t from-darkPurple to-coralPink" />
             <p className="text-sm lg:text-lg font-normal text-transparent italic bg-gradient-to-t from-magentaPink to-coralPink bg-clip-text">
               "Simform is quick to identify larger problem with the Software so
@@ -56,7 +56,7 @@ function Endorsement() {
         </div>
       </div>
 
-      <div className="w-full lg:h-[30rem] flex flex-col md:flex-row justify-between rounded-2xl mb-10 lg:mb-28">
+      <div className="w-full lg:h-[30rem] flex flex-col lg:flex-row justify-between rounded-2xl mb-10 lg:mb-28">
         <img
           src={endorsement2}
           alt="Endorsement 1"
@@ -79,7 +79,7 @@ function Endorsement() {
             you cut costs and deliver within budget.
           </p>
 
-          <span className="flex gap-2 md:gap-5 h-20 md:h-20 items-center">
+          <span className="flex gap-2 lg:gap-5 h-20 lg:h-20 items-center">
             <hr className="h-full w-1 shrink-0 bg-gradient-to-t from-darkPurple to-coralPink" />
             <p className="text-sm lg:text-lg font-normal text-transparent italic bg-gradient-to-t from-magentaPink to-coralPink bg-clip-text">
               "Simform is quick to identify larger problem with the Software so
@@ -97,7 +97,7 @@ function Endorsement() {
         </div>
       </div>
 
-      <div className="w-full lg:h-[30rem] flex flex-col md:flex-row-reverse justify-between rounded-2xl mb-10 lg:mb-28">
+      <div className="w-full lg:h-[30rem] flex flex-col lg:flex-row-reverse justify-between rounded-2xl mb-10 lg:mb-28">
         <img
           src={endorsement3}
           alt="Endorsement 1"
@@ -120,7 +120,7 @@ function Endorsement() {
             you cut costs and deliver within budget.
           </p>
 
-          <span className="flex gap-2 md:gap-5 h-20 md:h-20 items-center">
+          <span className="flex gap-2 lg:gap-5 h-20 lg:h-20 items-center">
             <hr className="h-full w-1 shrink-0 bg-gradient-to-t from-darkPurple to-coralPink" />
             <p className="text-sm lg:text-lg font-normal text-transparent italic bg-gradient-to-t from-magentaPink to-coralPink bg-clip-text">
               "Simform is quick to identify larger problem with the Software so

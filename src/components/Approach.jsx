@@ -14,7 +14,7 @@ function Approach() {
         {approaches.map((approach, i) => (
           <div
             key={i}
-            className="md:h-60 border-2 bg-gray-50 flex px-3 md:px-8 py-5 md:pt-12 gap-3 items-start md:gap-8 rounded-md"
+            className="lg:h-60 border-2 bg-gray-50 flex px-3 md:px-8 py-5 md:pt-12 gap-3 items-start lg:gap-8 rounded-md"
           >
             <span
               className={`w-8 h-8 p-2 md:w-16 md:h-16 bg-gradient-to-r ${approach.gradient} shrink-0 flex items-center justify-center rounded-lg`}
@@ -22,10 +22,10 @@ function Approach() {
               <img src={approach.image} alt="" />
             </span>
             <span>
-              <h4 className="text-lg md:text-xl font-semibold mb-3">
+              <h4 className="text-lg lg:text-xl font-semibold mb-3">
                 {approach.title}
               </h4>
-              <p className="text-textGray md:text-base text-sm">
+              <p className="text-textGray lg:text-base text-sm">
                 {approach.description}
               </p>
             </span>

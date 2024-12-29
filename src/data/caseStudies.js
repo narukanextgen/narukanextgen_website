@@ -1,6 +1,6 @@
-import caseStudy1 from "../assets/case-study1.png";
-import caseStudy2 from "../assets/case-study2.png";
-import caseStudy3 from "../assets/case-study3.png";
+import caseStudy1 from "../assets/case-study/case-study1.png";
+import caseStudy2 from "../assets/case-study/case-study2.png";
+import caseStudy3 from "../assets/case-study/case-study3.png";
 
 export const caseStudies = [
   {

@@ -14,11 +14,11 @@ function Testimonials() {
     <>
       <div className="font-inter w-full">
         <span className="block w-20 h-10 rounded-b-full bg-gradient-to-tr from-darkPurple to-coralPink ml-40"></span>
-        <div className="w-full flex flex-col md:flex-row md:h-[30rem] items-center justify-between md:px-20 px-5 gap-10 my-20 md:my-40">
-          <div className="w-full md:w-1/2 h-full grow-0 flex flex-col justify-between">
+        <div className="w-full flex flex-col lg:flex-row lg:h-[30rem] items-center justify-between lg:px-20 px-5 gap-10 my-20 lg:my-40">
+          <div className="w-full lg:w-1/2 h-full grow-0 flex flex-col gap-10 justify-between">
             <span>
               <hr className="h-2 w-20 bg-gradient-to-r from-darkPurple to-coralPink mb-6" />
-              <h3 className="text-4xl md:leading-[55px] font-normal">
+              <h3 className="text-4xl lg:leading-[55px] font-normal">
                 Leading companies trust us <br />
                 <span className="font-bold"> to develop software</span>
               </h3>
@@ -26,32 +26,34 @@ function Testimonials() {
             <p className="text-sm md:leading-9 md:text-xl text-textGray">
               We{" "}
               <span className="text-[#a7337d]">add development capacity</span>{" "}
-              to tech teams. Our value isn’t <br /> limited to building teams
-              but is equally distributed across the <br /> project lifecycle. We
-              are a custom software development <br /> company that guarantees
-              the successful delivery of your <br /> project
+              to tech teams. Our value isn’t <br className="hidden lg:inline" />{" "}
+              limited to building teams but is equally distributed across the{" "}
+              <br className="hidden lg:inline" /> project lifecycle. We are a
+              custom software development <br className="hidden lg:inline" />{" "}
+              company that guarantees the successful delivery of your{" "}
+              <br className="hidden lg:inline" /> project
             </p>
             <span className="mb-10 text-sm md:text-lg text-darkPurple flex items-center gap-2">
               See more Information
               <RightArrowIcon />
             </span>
           </div>
-          <div className="h-full">
+          <div className="lg:h-full">
             <img
               src={workGroupImage}
               alt="Team around office table"
-              className="h-full"
+              className="lg:h-full"
             />
           </div>
         </div>
-        <span className="p-5 md:pl-20 flex flex-col">
+        <span className="p-5 lg:pl-20 flex flex-col">
           <hr className="h-2 w-20 bg-gradient-to-r from-darkPurple to-coralPink mb-6" />
-          <h3 className="text-4xl md:leading-[55px] font-normal">
+          <h3 className="text-4xl lg:leading-[55px] font-normal">
             Meet the People <br />{" "}
             <span className="font-bold">We are Working With</span>
           </h3>
         </span>
-        <span className="flex justify-end pr-20 gap-5">
+        <span className="flex justify-end pr-5 lg:pr-20 gap-5">
           <button className="w-10 h-10 border-2 border-darkPurple rounded-full flex justify-center items-center">
             <LeftArrowIcon className="fill-darkPurple" />
           </button>
@@ -60,7 +62,7 @@ function Testimonials() {
           </button>
         </span>
         <span className="block w-20 h-10 rounded-t-full bg-gradient-to-tr from-darkPurple to-coralPink ml-[50%]"></span>
-        <div className="w-full grid grid-cols-2 lg:flex items-center justify-items-center lg:justify-between px-5 py-3 bg-gray-200 mb-24">
+        <div className="w-full flex items-center flex-wrap justify-around lg:justify-between px-5 py-3 bg-gray-200">
           <img src={logo1} alt="logo1" />
           <img src={logo2} alt="logo1" />
           <img src={logo3} alt="logo1" />

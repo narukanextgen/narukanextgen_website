@@ -12,9 +12,12 @@ function Resources() {
         Featured <br />
         <span className="font-bold">Resources</span>
       </h3>
-      <div className="flex w-full justify-between gap-20">
-        {resources.map((resource) => (
-          <span className="first:w-56 last:w-56 w-64 h-72 flex flex-col">
+      <div className="flex lg:flex-row items-center flex-col w-full justify-between gap-20">
+        {resources.map((resource, i) => (
+          <span
+            key={i}
+            className="first:w-56 last:w-56 w-64 h-72 flex flex-col"
+          >
             <img
               src={resource.image}
               alt=""
