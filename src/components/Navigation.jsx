@@ -16,7 +16,7 @@ function Navigation() {
         </span>
       )}
       <header
-        className={`md:w-full md:h-16 w-screen h-screen flex-col md:flex-row justify-between items-center md:px-8 md:shadow-2xl bg-white z-10 absolute top-0 ${
+        className={`md:w-full md:h-16 w-screen h-screen flex-col md:flex-row justify-between items-center md:px-8 md:shadow-2xl bg-white z-10 ${
           isMenuOpen ? "flex" : "hidden"
         } md:flex`}
       >

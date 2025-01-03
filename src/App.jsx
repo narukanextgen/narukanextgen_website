@@ -1,38 +1,25 @@
-import { useState } from "react";
 import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router";
 import Navigation from "./components/Navigation";
-import Landing from "./components/Landing";
-import ServicesCarousel from "./components/ServicesCarousel";
-import Testimonials from "./components/Testimonials";
-import CaseStudies from "./components/CaseStudies";
-import Endorsement from "./components/Endorsement";
-import Approach from "./components/Approach";
-import TechStack from "./components/TechStack";
-import Roadmap from "./components/Roadmap";
-import Resources from "./components/Resources";
-import Hiring from "./components/Hiring";
-import TestimonialCarousel from "./components/TestimonialCarousel";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Careers from "./pages/Careers";
+import Job from "./pages/Job";
 
 function App() {
   return (
     <>
-      <Navigation />
-      <main>
-        <Landing />
-        <ServicesCarousel />
-        <Testimonials />
-        <TestimonialCarousel />
-        <CaseStudies />
-        <Endorsement />
-        <Approach />
-        <TechStack />
-        <hr className="w-full h-[2px] bg-gray-200" />
-        <Roadmap />
-        <Resources />
-        <Hiring />
-      </main>
-      <Footer />
+      <BrowserRouter>
+        <Navigation />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/careers/:id" element={<Job />} />
+          </Routes>
+        </main>
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
