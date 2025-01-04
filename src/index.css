@@ -99,7 +99,7 @@ body {
     display: flex !important;
   }
   .quote .slick-dots {
-    bottom: 15rem !important;
+    bottom: 10rem !important;
   }
   .quote .slick-slide > div {
     margin: 0 20%;
@@ -111,7 +111,7 @@ body {
     left: 0.5rem;
   }
   .quote .arrow {
-    top: 10%;
+    top: 15%;
     width: 2.5rem;
     height: 2.5rem;
   }

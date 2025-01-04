@@ -3,7 +3,10 @@ import { caseStudies } from "../data/caseStudies";
 
 function CaseStudies() {
   return (
-    <div className="bg-gray-100 flex flex-col items-center px-5 lg:px-28 font-inter pb-16 lg:pb-24 max-w-screen">
+    <div
+      id="case-studies"
+      className="bg-gray-100 flex flex-col items-center px-5 lg:px-28 font-inter pb-16 lg:pb-24 max-w-screen"
+    >
       <hr className="h-2 w-20 bg-gradient-to-r from-darkPurple to-coralPink mb-6 mt-24" />
 
       <h3 className="text-4xl md:leading-[55px] font-normal text-center mb-24">

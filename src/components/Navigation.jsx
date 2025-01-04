@@ -2,6 +2,7 @@ import narulaLogo from "../assets/narula-nextgen.png";
 import xIcon from "../assets/x.svg";
 import menuIcon from "../assets/menu.svg";
 import { useState, useEffect } from "react";
+import { Link } from "react-router";
 
 function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,6 +38,9 @@ function Navigation() {
           <button className="font-inter">Blog</button>
           <button className="font-inter">How It Works</button>
           <button className="font-inter">Hire</button>
+          <Link to={"/careers"}>
+            <button className="font-inter">Careers</button>
+          </Link>
         </nav>
         <button className="text-white bg-gradient-to-bl from-[#6675F7] to-[#57007B] rounded px-3 py-2">
           Contact Us

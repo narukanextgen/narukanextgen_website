@@ -19,7 +19,7 @@ function ServicesCarousel() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -47,7 +47,10 @@ function ServicesCarousel() {
   };
 
   return (
-    <div className="max-w-screen relative flex flex-col items-center bg-gray-100 font-inter">
+    <div
+      id="services"
+      className="max-w-screen relative flex flex-col items-center bg-gray-100 font-inter"
+    >
       <h2 className="text-4xl text-gray-900 font-bold mb-12 mt-16">
         Services we offer
       </h2>

@@ -39,7 +39,7 @@ export const careers = [
           workingHours: "9am-5pm",
           jobType: "Full-time",
           vacancies: 4,
-          location: ["Remote", "Hybrid"]
+          location: "Remote"
         },
         {
           uuid: "244e19a1-d7a2-4e8d-9c1a-d7c32126f9ba",
@@ -115,7 +115,7 @@ export const careers = [
           workingHours: "9am-5pm",
           jobType: "Full-time",
           vacancies: 2,
-          location: ["Remote", "Hybrid"]
+          location: "Remote"
         },
         {
           uuid: "1adf676b-c3a4-4e6e-a4f5-9b4965d7405e",
@@ -153,7 +153,7 @@ export const careers = [
           workingHours: "9am-5pm",
           jobType: "Full-time",
           vacancies: 3,
-          location: ["Remote", "Hybrid"]
+          location: "Remote"
         },
         {
           uuid: "c85f15ab-cf65-411b-b909-23d85fda8e55",
@@ -190,7 +190,7 @@ export const careers = [
           workingHours: "9am-5pm",
           jobType: "Full-time",
           vacancies: 2,
-          location: ["Remote", "Hybrid"]
+          location: "Remote"
         }, {
           uuid: "ff6a2406-d2ed-4679-b072-580eb6ed8b99",
           title: "Frontend Developer",
@@ -226,7 +226,7 @@ export const careers = [
           workingHours: "9am-5pm",
           jobType: "Full-time",
           vacancies: 5,
-          location: ["Remote", "Hybrid"]
+          location: "Remote"
         },
         {
           uuid: "0d6d0bb4-13e0-4d8a-b3c8-4155733d6639",
@@ -263,7 +263,7 @@ export const careers = [
           workingHours: "9am-5pm",
           jobType: "Full-time",
           vacancies: 3,
-          location: ["Remote", "Hybrid"]
+          location: "Remote"
         },
         {
           uuid: "073d4651-9f0b-4c56-8997-bd7e42f37d02",
@@ -374,7 +374,7 @@ export const careers = [
           workingHours: "9am-5pm",
           jobType: "Full-time",
           vacancies: 5,
-          location: ["Remote", "Hybrid"]
+          location: "Remote"
         },
         {
           uuid: "b03573bc-daf6-4c68-b0d2-61940d05b17f",
@@ -411,7 +411,7 @@ export const careers = [
           workingHours: "9am-5pm",
           jobType: "Full-time",
           vacancies: 3,
-          location: ["Remote", "Hybrid"]
+          location: "Remote"
         },
         {
           uuid: "6e3f6897-87ef-4a3e-8de7-b8f5da7fa5f4",
@@ -448,7 +448,7 @@ export const careers = [
           workingHours: "9am-5pm",
           jobType: "Full-time",
           vacancies: 4,
-          location: ["Remote", "Hybrid"]
+          location: "Remote"
         },
         {
           uuid: "e8cb8db5-e61d-45fb-b220-e9eec022d307",
@@ -485,7 +485,7 @@ export const careers = [
           workingHours: "9am-5pm",
           jobType: "Full-time",
           vacancies: 3,
-          location: ["Remote", "Hybrid"]
+          location: "Remote"
         },
         {
           uuid: "b1f40287-62c1-4db4-a687-ff9b059c7171",
@@ -522,7 +522,7 @@ export const careers = [
           workingHours: "9am-5pm",
           jobType: "Full-time",
           vacancies: 3,
-          location: ["Remote", "Hybrid"]
+          location: "Remote"
         },
         {
           uuid: "b453f384-8ed9-4421-b3c2-c442f3b1ff4b",
@@ -559,7 +559,7 @@ export const careers = [
           workingHours: "9am-5pm",
           jobType: "Full-time",
           vacancies: 3,
-          location: ["Remote", "Hybrid"]
+          location: "Remote"
         },
         {
           uuid: "5d0a60b5-df70-4007-9a87-52c2e60fc7a6",
@@ -596,7 +596,7 @@ export const careers = [
           workingHours: "9am-5pm",
           jobType: "Full-time",
           vacancies: 3,
-          location: ["Remote", "Hybrid"]
+          location: "Remote"
         },
         {
           uuid: "8f50eac1-77d2-4f64-bc39-bc4c5d4b7d45",
@@ -633,7 +633,7 @@ export const careers = [
           workingHours: "9am-5pm",
           jobType: "Full-time",
           vacancies: 4,
-          location: ["Remote", "Hybrid"]
+          location: "Remote"
         },
         {
           uuid: "8dbd9714-9719-4cfb-89de-c1e2226a9b9c",
@@ -670,7 +670,7 @@ export const careers = [
           workingHours: "9am-5pm",
           jobType: "Full-time",
           vacancies: 3,
-          location: ["Remote", "Hybrid"]
+          location: "Remote"
         }]
   },
   {
@@ -710,7 +710,7 @@ export const careers = [
         workingHours: "9am-5pm",
         jobType: "Full-time",
         vacancies: 4,
-        location: ["Remote", "Hybrid"]
+        location: "Remote"
       },
       {
         uuid: "5ec3d0c1-5a9f-4ffb-9da5-77938d2bbcc9",
@@ -746,7 +746,7 @@ export const careers = [
         workingHours: "9am-5pm",
         jobType: "Full-time",
         vacancies: 3,
-        location: ["Remote", "Hybrid"]
+        location: "Remote"
       },
       {
         uuid: "d5dce259-c5ea-4f68-94b0-1a6315044786",
@@ -782,7 +782,7 @@ export const careers = [
         workingHours: "9am-5pm",
         jobType: "Full-time",
         vacancies: 2,
-        location: ["Remote", "Hybrid"]
+        location: "Remote"
       },
       {
         uuid: "29a4ccdd-7cb5-41a3-8b27-e5b6a1f423f4",
@@ -818,7 +818,7 @@ export const careers = [
         workingHours: "9am-5pm",
         jobType: "Full-time",
         vacancies: 3,
-        location: ["Remote", "Hybrid"]
+        location: "Remote"
       }]
   },
   {
