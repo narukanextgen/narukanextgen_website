@@ -1,30 +1,27 @@
-import Landing from "../components/Landing";
-import ServicesCarousel from "../components/ServicesCarousel";
-import Testimonials from "../components/Testimonials";
-import CaseStudies from "../components/CaseStudies";
-import Endorsement from "../components/Endorsement";
-import Approach from "../components/Approach";
-import TechStack from "../components/TechStack";
-import Roadmap from "../components/Roadmap";
-import Resources from "../components/Resources";
-import Hiring from "../components/Hiring";
-import TestimonialCarousel from "../components/TestimonialCarousel";
+import Banner from "../components/Banner";
+import Culture from "../components/Culture";
+import About from "../components/About";
+import People from "../components/People";
+import values from "../assets/Values.png";
+import NewsCarousel from "../components/NewsCarousel";
+import Partners from "../components/Partners";
 
 function Home() {
   return (
     <>
-      <Landing />
-      <ServicesCarousel />
-      <Testimonials />
-      <TestimonialCarousel />
-      <CaseStudies />
-      <Endorsement />
-      <Approach />
-      <TechStack />
-      <hr className="w-full h-[2px] bg-gray-200" />
-      <Roadmap />
-      <Resources />
-      <Hiring />
+      <Banner />
+      <About />
+
+      <div className="w-full flex px-5 md:px-10 lg:px-0 justify-center">
+        <img src={values} alt="Our Values" />
+      </div>
+
+      <Partners />
+
+      <Culture />
+      <People />
+
+      <NewsCarousel />
     </>
   );
 }
