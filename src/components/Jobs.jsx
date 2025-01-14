@@ -8,7 +8,7 @@ function JobDeptFilter({ departments, department, setDepartment }) {
       {departments.map((item, index) => (
         <button
           key={index}
-          className={`uppercase text-2xl font-semibold ${
+          className={`uppercase text-xs md:text-xl lg:text-2xl font-semibold ${
             department === item ? "text-white bg-black" : "text-black"
           } rounded-full grow h-full py-3 transition-all duration-300 ease-in-out`}
           value={item}
@@ -26,15 +26,15 @@ function JobCard({ position }) {
   return (
     <div
       className={`flex shadow-dark ${
-        isOpen ? "rounded-3xl mx-10" : "rounded-full"
-      } pl-5 pr-10 py-8`}
+        isOpen ? "rounded-3xl flex-wrap" : "rounded-full"
+      } px-5 md:pl-5 md:pr-10 py-3 md:py-8`}
     >
       <div
         onClick={(e) => {
           e.preventDefault();
           setIsOpen(!isOpen);
         }}
-        className="w-12 mr-3 cursor-pointer flex justify-center items-start pt-4"
+        className="w-12 mr-3 cursor-pointer flex justify-center items-start pt-7 md:pt-4"
       >
         <ChevronRight
           className={`${
@@ -42,11 +42,13 @@ function JobCard({ position }) {
           } transition-all duration-150 ease-in-out w-10 h-10`}
         />
       </div>
-      <div className="w-3/5 mr-10">
+      <div className={`w-3/5 mr-3 md:mr-10 ${isOpen ? "max-md:w-full" : ""}`}>
         <span className="text-xs bg-indigo font-semibold text-white rounded-full px-2 py-1">
           {position.department}
         </span>
-        <h4 className="font-semibold text-2xl mt-3">{position.title}</h4>
+        <h4 className="font-semibold text-lg md:text-2xl mt-3">
+          {position.title}
+        </h4>
         {isOpen && (
           <>
             <p className="mt-5">{position.description}</p>
@@ -69,9 +71,9 @@ function JobCard({ position }) {
           </>
         )}
       </div>
-      <div className="w-2/5">
+      <div className={`w-2/5 ${isOpen ? "max-md:w-full mt-10" : ""}`}>
         {!isOpen && (
-          <div className="h-full flex justify-end items-center gap-5 font-semibold">
+          <div className="h-full flex max-md:flex-col justify-center md:justify-end items-center gap-2 md:gap-5 font-semibold">
             <p>{position.location}</p>
             <p>{position.type}</p>
           </div>
@@ -125,8 +127,8 @@ function JobTable({ positions, department }) {
           (position) =>
             position.department === department || department === "All"
         )
-        .map((position, index) => (
-          <JobCard key={index} position={position} />
+        .map((position) => (
+          <JobCard key={position.id} position={position} />
         ))}
     </div>
   );

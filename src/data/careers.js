@@ -1,9 +1,12 @@
+import { v4 as uuid4 } from "uuid"
+
 export const departments = [
   "All", "Engineering", "Marketing", "Design", "Research"
 ]
 
 export const positions = [
   {
+    id: uuid4(),
     title: "Backend Developer",
     description: "Responsible for server-side application logic and integration of the work front-end developers do.",
     responsibilities: [
@@ -26,6 +29,7 @@ export const positions = [
     department: "Engineering"
   },
   {
+    id: uuid4(),
     title: "Frontend Developer",
     description: "Develop user-facing features and ensure the technical feasibility of UI/UX designs.",
     responsibilities: [
@@ -48,6 +52,7 @@ export const positions = [
     department: "Engineering"
   },
   {
+    id: uuid4(),
     title: "Full Stack Developer",
     description: "Handle both frontend and backend development tasks for web applications.",
     responsibilities: [
@@ -70,6 +75,7 @@ export const positions = [
     department: "Engineering"
   },
   {
+    id: uuid4(),
     title: "Mobile App Developer",
     description: "Develop and maintain mobile applications for iOS and Android.",
     responsibilities: [
@@ -92,6 +98,7 @@ export const positions = [
     department: "Engineering"
   },
   {
+    id: uuid4(),
     title: "DevOps Engineer",
     description: "Implement and manage CI/CD pipelines and cloud infrastructure.",
     responsibilities: [
@@ -114,6 +121,7 @@ export const positions = [
     department: "Engineering"
   },
   {
+    id: uuid4(),
     title: "UI/UX Designer",
     description: "Design intuitive and user-friendly interfaces for digital products.",
     responsibilities: [
@@ -136,6 +144,7 @@ export const positions = [
     department: "Design"
   },
   {
+    id: uuid4(),
     title: "Graphic Designer",
     description: "Create visual content for marketing and branding purposes.",
     responsibilities: [
@@ -158,6 +167,7 @@ export const positions = [
     department: "Design"
   },
   {
+    id: uuid4(),
     title: "Digital Marketing Executive",
     description: "Plan and execute online marketing campaigns.",
     responsibilities: [
@@ -180,6 +190,7 @@ export const positions = [
     department: "Marketing"
   },
   {
+    id: uuid4(),
     title: "Social Media Manager",
     description: "Manage and grow social media presence across platforms.",
     responsibilities: [
@@ -201,6 +212,7 @@ export const positions = [
     deadline: "2025-02-08",
     department: "Marketing"
   }, {
+    id: uuid4(),
     title: "Backend Developer",
     description: "Responsible for server-side application logic and integration of the work front-end developers do.",
     responsibilities: [
@@ -223,6 +235,7 @@ export const positions = [
     department: "Engineering"
   },
   {
+    id: uuid4(),
     title: "Business Development Manager",
     description: "Drive company growth by identifying new business opportunities and building client relationships.",
     responsibilities: [
@@ -245,6 +258,7 @@ export const positions = [
     department: "Marketing"
   },
   {
+    id: uuid4(),
     title: "Market Research Analyst",
     description: "Analyze market trends and competitor strategies to guide business decisions.",
     responsibilities: [
@@ -267,6 +281,7 @@ export const positions = [
     department: "Research"
   },
   {
+    id: uuid4(),
     title: "Research Scientist",
     description: "Conduct innovative research and contribute to product development and technology solutions.",
     responsibilities: [
@@ -289,6 +304,7 @@ export const positions = [
     department: "Research"
   },
   {
+    id: uuid4(),
     title: "User Researcher",
     description: "Conduct user research to help improve product design and user experience.",
     responsibilities: [

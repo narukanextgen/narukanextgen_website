@@ -12,14 +12,14 @@ import Jobs from "../components/Jobs";
 
 function Benefits() {
   return (
-    <div className="flex flex-col gap-16 w-full">
+    <div className="flex flex-col gap-10 lg:gap-16 w-full">
       <div className="flex gap-5 items-center">
         <div>
           <span className="w-20 h-20 block rounded-2xl bg-gradient-to-br from-pink-vivid to-white">
             <img
               src={benefit1}
               alt=""
-              className="-translate-x-2 -translate-y-3 scale-125"
+              className="w-full h-full -translate-x-2 -translate-y-3 scale-125"
             />
           </span>
         </div>
@@ -140,24 +140,24 @@ function Careers() {
     <div className="w-full font-monteserrat">
       <div className="w-full lg:mt-10 font-monteserrat pt-24">
         <h2
-          className="heading text-heading leading-[1.4] px-32 relative text-center font-extrabold after:content-['careers'] after:-z-[1] 
-        after:text-effect after:uppercase after:leading-none after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 
+          className="text-3xl md:text-4xl lg:text-heading leading-[1.4] lg:px-32 relative text-center font-extrabold after:content-['careers'] after:-z-[1] 
+        after:text-6xl md:after:text-9xl lg:after:text-effect after:uppercase after:leading-none after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 
         after:bg-clip-text after:text-transparent/0 after:bg-gradient-to-b after:from-cyan-pale/50 after:via-lavender/50
       after:to-pink-candy/50"
         >
           Be a Part of Our Journey
         </h2>
         <div className="w-full flex justify-center">
-          <Effect className="mt-10" />
+          <Effect className="mt-5 lg:mt-10" />
         </div>
 
-        <p className="mt-12 px-32 text-center text-2xl">
+        <p className="mt-12 px-5 md:px-32 text-center text-base md:text-2xl">
           Join a dynamic and innovative team dedicated to shaping the future of
           technology through creativity, collaboration, and impactful digital
           solutions.
         </p>
 
-        <div className="font-semibold flex justify-center mt-16 gap-10 ">
+        <div className="font-semibold flex justify-center mt-16 gap-5 md:gap-10 ">
           <button className="rounded-full px-5 py-3 bg-indigo uppercase text-white">
             Explore Opportunities
           </button>
@@ -168,13 +168,13 @@ function Careers() {
 
         <img src={teamBackground} alt="" className="w-full" />
 
-        <div className="bg-gradient-to-b from-indigo to-purple-deep rounded-t-6xl flex pt-32 pb-96 px-24 gap-10 text-white">
-          <div className="w-2/4">
-            <h3 className="text-heading leading-[72px] font-extrabold">
+        <div className="bg-gradient-to-b from-indigo to-purple-deep rounded-t-4xls md:rounded-t-6xl flex max-md:mt-10 max-md:flex-col pt-24 md:pt-32 pb-80 md:pb-96 px-5 md:px-10 lg:px-24 gap-10 text-white">
+          <div className="w-full md:w-2/4">
+            <h3 className="text-3xl md:text-5xl md:leading-tight lg:text-heading lg:leading-[72px] font-extrabold">
               Benefits of Working Here
             </h3>
             <Effect className="mt-6" />
-            <p className="text-2xl mt-10">
+            <p className="md:text-lg lg:text-2xl mt-10">
               We recognize that compensation and benefits play a major part in
               making sure that you feel you can focus on your work. We offer
               generous packages to make sure you feel respected and appreciated
@@ -182,33 +182,33 @@ function Careers() {
             </p>
           </div>
 
-          <div className="w-3/5">
+          <div className="w-full md:w-3/5">
             <Benefits />
           </div>
         </div>
-        <div className="-translate-y-[6rem] relative rounded-t-6xl z-[2] bg-white">
+        <div className="-translate-y-[6rem] relative rounded-t-4xl md:rounded-t-6xl z-[2] bg-white">
           <div
             style={{ backgroundImage: `url(${joinUsBackground})` }}
-            className="rounded-4xl bg-center bg-cover h-96 -translate-y-1/2 -mb-16 mx-40"
+            className="rounded-3xl md:rounded-4xl bg-center bg-cover lg:h-96 -translate-y-1/2 -mb-16 mx-10 md:mx-20 lg:mx-40"
           >
-            <div className="w-full h-full rounded-4xl bg-black/60 flex p-20 items-center">
-              <h5 className="text-4xl leading-10 italic text-white w-3/5">
+            <div className="w-full h-full rounded-3xl md:rounded-4xl bg-black/60 flex max-md:gap-5 max-md:flex-col px-5 py-10 md:px-10 md:py-20 lg:p-20 items-center">
+              <h5 className="text-lg md:text-2xl lg:text-4xl leading-10 italic text-white w-full md:w-3/5">
                 Discover how innovative solutions and cutting-edge technology
                 drive business growth and digital transformation.
               </h5>
-              <div className="flex h-full w-2/5 items-center justify-end">
-                <button className="px-8 py-5 rounded-full text-2xl uppercase bg-cyan-light text-cyan-dark font-semibold">
+              <div className="flex h-full md:w-2/5 items-center justify-end">
+                <button className="px-5 py-3 md:px-8 md:py-5 rounded-full md:text-xl lg:text-2xl uppercase bg-cyan-light text-cyan-dark font-semibold">
                   More About Us
                 </button>
               </div>
             </div>
           </div>
-          <div className="px-56">
-            <h2 className="heading text-heading leading-[1.4] px-32 relative text-center font-extrabold ">
+          <div className="px-5 md:px-10 lg:px-56">
+            <h2 className="text-3xl md:text-4xl lg:text-heading leading-[1.4] px-32 relative text-center font-extrabold ">
               Open Positions
             </h2>
             <div className="flex justify-center">
-              <Effect className="mt-10" />
+              <Effect className="mt-5 lg:mt-10" />
             </div>
             <div>
               <Jobs />
