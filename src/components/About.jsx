@@ -23,16 +23,16 @@ function About() {
       <div className="bg-lavender/50 flex flex-col-reverse max-md:gap-10 md:flex-row pt-16 pb-5 md:pl-10 lg:pl-16 mt-10 md:mt-20 rounded-3xl px-5 md:px-0 md:rounded-4xl lg:rounded-6xl">
         <div className="w-full md:w-7/12 md:shrink-0 lg:shrink">
           <p className="md:text-base lg:text-lg leading-para">
-            Naruka NextGen InfoTech is a leading digital solutions company
-            dedicated to transforming businesses through innovative technology.
+            We are a team of passionate innovators dedicated to providing
+            top-notch IT solutions tailored to your business needs. Our mission
+            is to help organizations achieve digital excellence and stay ahead
+            in a rapidly evolving tech landscape.
           </p>
           <p className="md:text-base lg:text-lg leading-para mt-8">
-            We specialize in web design, development, and secure hosting
-            services, delivering tailored solutions that drive growth and
-            enhance digital presence. Our team combines creativity and technical
-            expertise to help brands stay ahead in a fast-evolving digital
-            world. Partner with us to turn your vision into impactful digital
-            experiences.
+            With expertise across diverse technologies and industries, we pride
+            ourselves on delivering solutions that combine creativity, strategy,
+            and execution. Together, we aim to empower businesses to achieve
+            their full potential through technology.
           </p>
           <span className="mt-12 flex">
             <p className="text-lg md:text-xl lg:text-2xl leading-9 italic font-semibold relative">
@@ -40,8 +40,8 @@ function About() {
                 className="rotate-180 w-16 h-16 md:w-10 md:h-10 lg:w-16 lg:h-16 fill-indigo/20 absolute -top-5 md:-top-4 lg:-top-7 left-0"
                 strokeWidth={0}
               />
-              Blending creativity with technology to build impactful digital
-              experiences for the future.
+              Technology is not just a tool, it's the bridge between imagination
+              and innovation.
             </p>
           </span>
         </div>

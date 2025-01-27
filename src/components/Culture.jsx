@@ -22,7 +22,7 @@ function Culture() {
         <Effect className="mr-[30%] mt-5 lg:mt-10" />
       </div>
 
-      <div className="flex flex-col md:flex-row px-5 md:px-10 gap-10 md:pt-16 lg:pt-24">
+      <div className="flex flex-col md:flex-row px-5 md:px-10 lg:px-32 gap-10 md:pt-16 lg:pt-24">
         <div className="w-full md:w-1/2 shrink-0">
           <div className="grid grid-rows-2 grid-flow-col content-center w-full gap-5">
             <div className="flex items-end -translate-y-10 shrink-0 md:w-24 lg:w-fit">
@@ -71,21 +71,18 @@ function Culture() {
         </div>
         <div className="w-full md:w-1/2 lg:pt-20 space-y-5 md:space-y-3 lg:space-y-10">
           <h3 className="font-semibold text-xl md:text-lg lg:text-2xl leading-9">
-            An Inclusive Culture Where Innovation Thrives and Ideas Become
-            Reality
+            Where People and Ideas Thrive
           </h3>
           <p className="md:text-sm lg:text-lg leading-para">
-            At Naruka NextGen InfoTech, we believe that our people are the
-            driving force behind every success. We foster a collaborative and
-            inclusive environment where creativity, innovation, and continuous
-            learning are at the core. Every team member is encouraged to share
-            ideas, take initiative, and grow both personally and professionally.
+            We believe that a strong company culture drives innovation and
+            success. Our team thrives in an environment that values creativity,
+            diversity, and collaboration.
           </p>
           <p className="md:text-sm lg:text-lg leading-para">
-            We value diversity, open communication, and mutual respect, creating
-            a positive workspace where everyone feels empowered. Together, we
-            build impactful digital solutions that inspire progress and shape
-            the future.
+            At the core of our culture lies a commitment to creating an
+            inspiring workplace where every voice matters, ideas flourish, and
+            talents are nurtured. We welcome like-minded individuals to join us
+            on this exciting journey of growth and innovation.
           </p>
         </div>
       </div>

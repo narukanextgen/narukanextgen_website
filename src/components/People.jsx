@@ -52,8 +52,8 @@ function People() {
                     alt=""
                     className="z-[2] relative bottom-1 w-44 md:w-56 lg:w-fit"
                   />
-                  <div className="w-60 h-48 md:w-80 md:h-64 lg:w-[30rem] lg:h-[24rem] rounded-[50%] absolute left-1/2 -translate-x-1/2 bottom-0 border bg-gradient-to-b from-indigo to-cyan-bright z-[1]"></div>
-                  <div className="w-60 h-48 md:w-80 md:h-64 lg:w-[30rem] lg:h-[24rem] rounded-[50%] absolute bottom-0 left-1/2 -translate-x-[calc(50%-20px)] border border-indigo z-0"></div>
+                  <div className="w-60 h-48 md:w-80 md:h-64 lg:w-[20rem] lg:h-[24rem] rounded-[50%] absolute left-1/2 -translate-x-1/2 bottom-0 border bg-gradient-to-b from-indigo to-cyan-bright z-[1]"></div>
+                  <div className="w-60 h-48 md:w-80 md:h-64 lg:w-[20rem] lg:h-[24rem] rounded-[50%] absolute bottom-0 left-1/2 -translate-x-[calc(50%-20px)] border border-indigo z-0"></div>
                 </div>
               </div>
               <div className="flex flex-col justify-center max-md:text-center">
@@ -97,12 +97,13 @@ function People() {
               description="A people-centric leader fostering a supportive and inclusive workplace. With a focus on talent development and employee engagement, they cultivate a culture that empowers teams to thrive."
             />
           </div>
-          <div className="py-20 md:p-10 lg:p-28">
-            <img src={team} alt="" />
-          </div>
         </div>
       </div>
-      <img src={gallery} alt="" className="-translate-y-1/2 w-full -mb-[25%]" />
+      <p className="text-4xl font-semibold text-center p-5 md:px-10 lg:px-[25%] mt-10">
+        We're growing! Join our team to be a part of our mission to create
+        meaningful IT solutions.
+      </p>
+      <img src={gallery} alt="" className="w-full" />
     </>
   );
 }

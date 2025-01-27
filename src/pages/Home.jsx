@@ -5,6 +5,8 @@ import People from "../components/People";
 import values from "../assets/Values.png";
 import NewsCarousel from "../components/NewsCarousel";
 import Partners from "../components/Partners";
+import Values from "../components/Values";
+import Collaborators from "../components/Collaborators";
 
 function Home() {
   return (
@@ -12,11 +14,9 @@ function Home() {
       <Banner />
       <About />
 
-      <div className="w-full flex px-5 md:px-10 lg:px-0 justify-center">
-        <img src={values} alt="Our Values" />
-      </div>
+      <Values />
 
-      <Partners />
+      <Collaborators />
 
       <Culture />
       <People />

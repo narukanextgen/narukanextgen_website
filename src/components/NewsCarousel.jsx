@@ -7,8 +7,12 @@ import Effect from "./Effect";
 
 function NewsCard({ imgUrl, headline }) {
   return (
-    <div className="mx-5 flex flex-col items-start md:h-56 lg:h-[21rem]">
-      <img src={imgUrl} alt="" className="rounded-2xl" />
+    <div className="mx-5 md:px-5 lg:pt-5 group flex flex-col items-start md:h-60 lg:h-[21rem] cursor-pointer">
+      <img
+        src={imgUrl}
+        alt=""
+        className="rounded-2xl group-hover:scale-110 group-hover:shadow-all"
+      />
       <p className="uppercase md:text-xs lg:text-sm text-gray-400 font-semibold md:mt-2 lg:mt-5">
         headline
       </p>

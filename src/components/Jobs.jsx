@@ -26,7 +26,7 @@ function JobCard({ position }) {
   return (
     <div
       className={`flex shadow-dark ${
-        isOpen ? "rounded-3xl flex-wrap" : "rounded-full"
+        isOpen ? "rounded-3xl max-md:flex-wrap" : "rounded-full"
       } px-5 md:pl-5 md:pr-10 py-3 md:py-8`}
     >
       <div

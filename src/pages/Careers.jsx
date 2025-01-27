@@ -168,7 +168,7 @@ function Careers() {
 
         <img src={teamBackground} alt="" className="w-full" />
 
-        <div className="bg-gradient-to-b from-indigo to-purple-deep rounded-t-4xls md:rounded-t-6xl flex max-md:mt-10 max-md:flex-col pt-24 md:pt-32 pb-80 md:pb-96 px-5 md:px-10 lg:px-24 gap-10 text-white">
+        <div className="bg-gradient-to-b from-indigo to-purple-deep rounded-t-4xl md:rounded-t-6xl flex max-md:mt-10 max-md:flex-col pt-24 md:pt-32 pb-80 md:pb-96 px-5 md:px-10 lg:px-24 gap-10 text-white">
           <div className="w-full md:w-2/4">
             <h3 className="text-3xl md:text-5xl md:leading-tight lg:text-heading lg:leading-[72px] font-extrabold">
               Benefits of Working Here
