@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import partnerBg from "../assets/partners-bg.jpg";
+import partnerBg1 from "../assets/partners-bg-1.jpg";
 import { partnerImages } from "../data/partnerImages";
 
 function Partners() {
@@ -25,7 +26,7 @@ function Partners() {
     <div className="px-5 md:px-10 pt-16 md:pt-24 lg:pt-32 lg:px-32 relative">
       <div
         className="bg-no-repeat bg-center w-full bg-cover rounded-3xl md:rounded-4xl"
-        style={{ backgroundImage: `url(${partnerBg})` }}
+        style={{ backgroundImage: `url(${partnerBg1})` }}
       >
         <div className="bg-black/75 w-full h-full rounded-3xl md:rounded-4xl py-10 text-white">
           <h2 className="text-center font-extrabold text-3xl lg:text-6xl">
