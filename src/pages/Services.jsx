@@ -21,12 +21,15 @@ import value2 from "../assets/values/value-2.png";
 import value3 from "../assets/values/value-3.png";
 import value4 from "../assets/values/value-4.png";
 
+import object1 from "../assets/services/services-object-1.png";
+import object2 from "../assets/services/services-object-2.png";
+
 function ProjectCarousel() {}
 
 function Services() {
   return (
     <div className="px-5 md:px-10 lg:px-20 lg:pt-24 font-montserrat">
-      <div className="max-md:pt-24 md:px-0 lg:px-12">
+      <div className="max-md:pt-24 md:px-0 lg:px-12 relative">
         <div
           className="max-md:h-[50vh] bg-center md:bg-[100%] bg-no-repeat bg-cover md:bg-contain py-32 px-16 max-md:rounded-3xl"
           style={{ backgroundImage: `url(${bannerBg})` }}
@@ -35,6 +38,16 @@ function Services() {
             Providing innovative and independent IT solutions for all.
           </h1>
         </div>
+        <img
+          src={object1}
+          alt="Decoration 1"
+          className="absolute -left-5 md:-left-10 lg:-left-20 top-0 md:-top-20 lg:-top-32 max-md:w-44 max-lg:w-56"
+        />
+        <img
+          src={object2}
+          alt="Decoration 2"
+          className="absolute -right-5 md:-right-10 lg:-right-20 bottom-0 translate-y-1/2 max-md:w-44 max-lg:w-56"
+        />
       </div>
       <div className="lg:mt-32 max-md:mt-24 pt-4 md:pt-32">
         <h2

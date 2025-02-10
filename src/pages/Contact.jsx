@@ -7,16 +7,29 @@ import { Facebook02Icon, InstagramIcon } from "hugeicons-react";
 import { Linkedin01Icon } from "hugeicons-react";
 import { NewTwitterIcon } from "hugeicons-react";
 
+import object1 from "../assets/contact/contact-object-1.png";
+import object2 from "../assets/contact/contact-object-2.png";
+import object3 from "../assets/contact/contact-object-3.png";
+import object4 from "../assets/contact/contact-object-4.png";
+import object5 from "../assets/contact/contact-object-5.png";
+
+import locationImg from "../assets/contact/contact-location.png";
+
 function Contact() {
   return (
     <div className="w-full font-montserrat">
-      <div className="pt-56">
+      <div className="pt-32 md:pt-56">
         <h2
           className="text-3xl md:text-4xl lg:text-heading leading-[1.4] relative text-center font-extrabold after:content-['contact'] after:-z-[1] 
         after:text-6xl md:after:text-9xl lg:after:text-effect after:uppercase after:leading-none after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 
         after:bg-clip-text after:text-transparent/0 after:bg-gradient-to-b after:from-cyan-pale/50 after:via-lavender/50
          after:to-pink-candy/50"
         >
+          <img
+            src={object1}
+            alt=""
+            className="absolute right-0 top-0 -translate-y-full max-md:w-32 max-lg:w-64"
+          />
           Meet Awesome People
         </h2>
         <div className="flex justify-center">
@@ -28,11 +41,21 @@ function Contact() {
           your long-term growth and success.
         </p>
       </div>
-      <div>
+      <div className="relative max-md:mt-24">
         <img src={contactBg} alt="" />
+        <img
+          src={object2}
+          alt=""
+          className="absolute top-0 left-0 -z-10 -translate-y-1/2 max-md:w-16 max-lg:w-32"
+        />
+        <img
+          src={object3}
+          alt=""
+          className="absolute top-1/2 right-0 max-md:w-32 max-lg:w-64"
+        />
       </div>
 
-      <div className="flex justify-around items-center w-full px-32 pt-32 -z-[1]">
+      {/* <div className="flex justify-around items-center w-full px-32 pt-32 -z-[1]">
         <div className="flex flex-col items-center gap-5 pt-10">
           <div className="text-center">
             <h4 className="text-4xl font-extrabold">John Doe</h4>
@@ -115,9 +138,90 @@ function Contact() {
             />
           </div>
         </div>
+      </div> */}
+
+      <div className="flex max-lg:flex-col w-full px-10 lg:px-24 mt-24 relative">
+        <img
+          src={object4}
+          alt=""
+          className="absolute left-0 lg:top-0 lg:z-10 lg:-translate-y-1/2 max-md:w-24 max-lg:w-56"
+        />
+        <img
+          src={object5}
+          alt=""
+          className="absolute top-1/2 lg:bottom-0 right-0 -z-10 max-md:w-28 max-lg:w-60"
+        />
+        <div className="flex flex-col items-center lg:w-1/2 grow-0 gap-7 p-5 md:p-10 bg-white/20 backdrop-blur">
+          <h3 className="font-extrabold text-4xl lg:text-heading">
+            Contact Us
+          </h3>
+          <Effect className="mt-3" />
+          <p className="text-sm md:text-lg text-center">
+            We’d love to hear from you! Whether you have questions, ideas, or
+            opportunities, let’s connect and create something amazing together.
+          </p>
+
+          <label htmlFor="name" className="w-full">
+            <input
+              type="text"
+              name="name"
+              className="rounded-lg border-2 border-black/40 w-full h-12 px-5 focus:outline-cyan-bright"
+              placeholder="What is your name? *"
+            />
+          </label>
+
+          <label htmlFor="email" className="w-full">
+            <input
+              type="text"
+              name="email"
+              className="rounded-lg border-2 border-black/40 w-full h-12 px-5 focus:outline-cyan-bright"
+              placeholder="What is your email? *"
+            />
+          </label>
+
+          <label htmlFor="email" className="w-full">
+            <input
+              type="text"
+              name="phone"
+              className="rounded-lg border-2 border-black/40 w-full h-12 px-5 focus:outline-cyan-bright"
+              placeholder="What is your phone number? *"
+            />
+          </label>
+
+          <label htmlFor="email" className="w-full">
+            <input
+              type="text"
+              name="email"
+              className="rounded-lg border-2 border-black/40 w-full h-12 px-5 focus:outline-cyan-bright"
+              placeholder="What is your company? *"
+            />
+          </label>
+
+          <label htmlFor="message" className="w-full">
+            <textarea
+              name="message"
+              className="rounded-lg border-2 border-black/40 w-full h-40 p-5 focus:outline-cyan-bright resize-none"
+              placeholder="Message here"
+            ></textarea>
+          </label>
+          <div className="flex items-center gap-5 w-full ">
+            <input type="checkbox" name="conditions" />
+            <label htmlFor="conditions">
+              I have read and accept the Terms of <br />{" "}
+              <span className="text-blue-400"> Service & Privacy Policy *</span>
+            </label>
+          </div>
+
+          <button className="uppercase w-full text-white bg-indigo rounded-full py-3 font-semibold">
+            Send Message
+          </button>
+        </div>
+        <div className="lg:-ml-24">
+          <img src={locationImg} alt="" />
+        </div>
       </div>
 
-      <div className="relative bg-gradient-to-br from-cyan-pale via-lavender to-pink-candy rounded-4xl mx-32 mt-96">
+      <div className="relative bg-gradient-to-br from-cyan-pale via-lavender to-pink-candy rounded-4xl mx-10 mt-24 md:mt-48 lg:mx-32 lg:mt-96">
         <div>
           <img
             src={contactBg2}
@@ -127,13 +231,14 @@ function Contact() {
         </div>
         <div
           style={{ backgroundImage: `url(${contactBg1})` }}
-          className="bg-center bg-cover rounded-4xl w-full h-full px-36 pt-28 pb-24"
+          className="bg-center bg-cover rounded-4xl w-full h-full px-5 py-10 md:p-10 lg:px-36 lg:pt-28 lg:pb-24"
         >
-          <h2 className="text-[44px] font-extrabold text-center">
-            We're on the mission to make the public markets work for all people.
+          <h2 className="text-2xl md:text-3xl lg:text-[44px] font-extrabold text-center">
+            Join us in shaping the future of IT services and driving impactful
+            change for businesses worldwide.
           </h2>
           <div className="w-full flex justify-center mt-10">
-            <button className="text-white bg-black rounded-full text-2xl font-semibold px-16 py-4 uppercase">
+            <button className="text-white bg-black rounded-full text-lg md:text-2xl font-semibold px-16 py-4 uppercase">
               Join with us
             </button>
           </div>
