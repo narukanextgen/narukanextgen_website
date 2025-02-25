@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Effect from "../components/Effect";
 import BannerBg from "../assets/contact-bg-2.png";
 import portfolio1 from "../assets/portfolio/portfolio-banner-1.jpg";
@@ -24,6 +25,16 @@ import inside3 from "../assets/portfolio/inside-3.png";
 
 import { testimonials } from "../data/testimonials";
 
+const categories = [
+  "ALL",
+  "COLLECTION",
+  "APPS",
+  "WEBSITE",
+  "NFT",
+  "DESIGNS",
+  "ART",
+];
+
 function Testimonials({ name, team, testimonial }) {
   return (
     <div>
@@ -40,9 +51,10 @@ function Testimonials({ name, team, testimonial }) {
 }
 
 function Portfolio() {
+  const [active, setActive] = useState("ALL");
   return (
     <div className="px-5 md:px-10 lg:px-24 pt-24 font-montserrat">
-      <div className="relative w-full h-[50vh] md:h-96 md:mb-36 bg-gradient-to-r from-indigo/50 via-cyan-electric/50 to-pink-vivid/50 rounded-4xl">
+      <div className="relative w-full h-[70vh] md:h-96 md:mb-36 bg-gradient-to-r from-indigo/50 via-cyan-electric/50 to-pink-vivid/50 rounded-4xl">
         <img
           src={portfolioDecor1}
           alt=""
@@ -61,8 +73,8 @@ function Portfolio() {
           />
         </div>
         <div className="absolute left-10 bottom-0 md:translate-y-3/4 max-md:mb-8">
-          <h1 className="text-3xl md:text-4xl lg:text-heading font-extrabold leading-[1.125]">
-            Explore More Than <br /> 200 Our Works
+          <h1 className="max-md:text-3xl max-lg:text-4xl lg:text-heading font-extrabold leading-[1.125]">
+            Explore More Than <br className="hidden md:block" /> 200 Our Works
           </h1>
           <Effect className="mt-5" />
         </div>
@@ -87,14 +99,18 @@ function Portfolio() {
       </div>
 
       <div className="pt-20 md:pt-8 lg:pt-24">
-        <div className="flex h-10 md:h-12 rounded-full text-xs md:text-xl lg:text-2xl font-semibold justify-around items-center bg-gradient-to-br from-cyan-pale via-lavender to-pink-candy">
-          <span>ALL</span>
-          <span>COLLECTION</span>
-          <span>APPS</span>
-          <span>WEBSITE</span>
-          <span>NFT</span>
-          <span>DESIGNS</span>
-          <span>ART</span>
+        <div className="flex md:h-12 rounded-full text-xs md:text-xl lg:text-2xl font-semibold justify-around items-center bg-gradient-to-br from-cyan-pale via-lavender to-pink-candy flex-wrap">
+          {categories.map((category) => (
+            <span
+              key={category}
+              className={`px-4 h-10 flex items-center rounded-full cursor-pointer transition-all ${
+                active === category ? "bg-black text-white" : ""
+              }`}
+              onClick={() => setActive(category)}
+            >
+              {category}
+            </span>
+          ))}
         </div>
       </div>
 

@@ -24,7 +24,37 @@ import value4 from "../assets/values/value-4.png";
 import object1 from "../assets/services/services-object-1.png";
 import object2 from "../assets/services/services-object-2.png";
 
-function ProjectCarousel() {}
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { projects } from "../data/projects";
+
+function Projects() {
+  const settings = {
+    dots: false,
+    arrows: false,
+    slidesToShow: 4,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+  return (
+    <div className="w-full">
+      <Slider {...settings}>
+        {projects.map((p, i) => (
+          <div key={i} className="w-96 h-56 md:px-3 !flex items-center">
+            <img src={p.img} alt="" />
+          </div>
+        ))}
+      </Slider>
+    </div>
+  );
+}
 
 function Services() {
   return (
@@ -455,16 +485,18 @@ function Services() {
       <div className="mt-24 md:mt-32 overflow-hidden">
         <div>
           <h2 className="font-extrabold text-4xl md:text-5xl lg:text-heading whitespace-nowrap">
-            Featured Values
+            Featured Projects
           </h2>
           <Effect className="mt-5 md:mt-8 lg:mt-10" />
         </div>
-        <div className="w-screen -ml-20 pl-20 flex mt-10">
-          <p className="md:text-lg lg:text-3xl w-1/5">
+        <div className="md:w-screen -ml-20 pl-20 flex max-md:flex-col mt-10 max-md:gap-5">
+          <p className="md:text-lg lg:text-3xl w-full md:w-1/5">
             Here's a selection of projects we're particularly proud of,
             demonstrating the breadth and depth of our capabilities.
           </p>
-          <div></div>
+          <div className="w-full md:w-4/5">
+            <Projects />
+          </div>
         </div>
       </div>
     </div>
