@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="w-full flex p-10 md:gap-5 lg:gap-0 font-montserrat mt-20">
+    <footer className="w-full flex flex-col md:flex-row p-10 gap-8 md:gap-5 lg:gap-0 font-montserrat md:mt-20">
       <div className="w-1/4"></div>
       <div className="flex flex-col md:gap-2 lg:gap-5 w-1/6 md:text-sm lg:text-base">
         <h5 className="text-lg text-purple-deep font-bold uppercase">

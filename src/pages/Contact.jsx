@@ -216,10 +216,10 @@ function Contact() {
             Send Message
           </button>
         </div>
-        <div className="w-1/2">
+        <div className="lg:w-1/2 w-full">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.86053520977!2d75.79055784999998!3d26.885210750000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1740459805349!5m2!1sen!2sin"
-            className="border-0 h-full w-full"
+            className="border-0 max-lg:aspect-square h-full w-full"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
