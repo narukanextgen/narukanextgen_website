@@ -28,6 +28,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { projects } from "../data/projects";
+import Collaborators from "../components/Collaborators";
 
 function Projects() {
   const settings = {
@@ -406,7 +407,8 @@ function Services() {
       </div>
 
       <div className="w-full">
-        <Partners />
+        {/* <Partners /> */}
+        <Collaborators />
       </div>
 
       <div className="w-full mt-24 md:mt-32">

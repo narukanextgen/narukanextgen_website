@@ -6,6 +6,7 @@ import values from "../assets/Values.png";
 import NewsCarousel from "../components/NewsCarousel";
 import Partners from "../components/Partners";
 import Values from "../components/Values";
+import Collaborators from "../components/Collaborators";
 
 function Home() {
   return (
@@ -15,7 +16,8 @@ function Home() {
 
       <Values />
 
-      <Partners />
+      {/* <Partners /> */}
+      <Collaborators />
 
       <Culture />
       <People />

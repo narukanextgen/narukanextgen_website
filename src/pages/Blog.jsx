@@ -6,9 +6,9 @@ import { blogs } from "../data/blogs";
 
 function Blog() {
   return (
-    <div className="font-montserrat px-10">
-      <div className="w-full relative h-[70vh] overflow-hidden rounded-4xl flex items-end justify-start">
-        <div className="w-2/3 p-16">
+    <div className="font-montserrat px-5 md:px-10 py-10 md:py-0">
+      <div className="w-full relative md:h-[70vh] overflow-hidden rounded-4xl flex items-end justify-start">
+        <div className="md:w-2/3 p-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white">
             Thoughts, Trends & Tech: Insights From the Minds Driving Digital
             Innovation
@@ -20,12 +20,16 @@ function Blog() {
           </p>
         </div>
         <div className="w-full h-full absolute -z-[1] bg-gradient-to-b from-purple-deep/5 via-cyan-dark to-indigo"></div>
-        <img src={blogBanner} alt="" className="w-full absolute -z-[5]" />
+        <img
+          src={blogBanner}
+          alt=""
+          className="w-full absolute -z-[5] max-md:h-full"
+        />
       </div>
 
-      <div className="flex mt-10">
+      <div className="flex md:flex-row flex-col mt-10 gap-5">
         {/* Blog Card 1 */}
-        <div className="flex gap-6">
+        <div className="flex flex-col lg:flex-row items-center gap-6">
           <img
             src={blog1}
             alt="Blog 1"
@@ -50,7 +54,7 @@ function Blog() {
         </div>
 
         {/* Blog Card 2 */}
-        <div className="flex gap-6">
+        <div className="flex flex-col lg:flex-row items-center gap-6">
           <img
             src={blog2}
             alt="Blog 2"
@@ -74,7 +78,7 @@ function Blog() {
           </div>
         </div>
       </div>
-      <div className="mt-20 grid grid-cols-3 gap-x-5 gap-y-16">
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-x-5 gap-y-16">
         {blogs.map((blog) => (
           <BlogCard
             image={blog.image}
