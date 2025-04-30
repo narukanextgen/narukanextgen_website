@@ -11,22 +11,24 @@ import Blog from "./pages/Blog";
 
 function App() {
   return (
-    <>
+    <div className="h-screen flex flex-col overflow-hidden">
       <BrowserRouter>
-        <Navbar />
-        <main className="max-w-screen">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/careers" element={<Careers />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/blog" element={<Blog />} />
-          </Routes>
-        </main>
-        <Footer />
+        <div id="scrollable-container" className="overflow-scroll">
+          <Navbar />
+          <main className="max-w-screen">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/careers" element={<Careers />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/blog" element={<Blog />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
